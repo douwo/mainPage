@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>testMainPage</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/Normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/aos.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/zhezhao.css" />
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/aos.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/divscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body {
+				position: relative;
+			}
+		</style>
+	</head>
+
+	<body class="item" data-spy="scroll" data-target="#navbar-example">
+		<!--<aside style="position: fixed;bottom: 20vh;right: 0;height: 40px;width: 40px;background-color: #999;opacity: 0.8; text-align: center;cursor: pointer;z-index: 10;border: 1px solid #333;box-sizing: border-box;">
+			<span>回到<br>顶部</span>
+		</aside>-->
+		<nav class="navbar navbar-default navbar-fixed-top aos-init" aos="slide-down">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<!--小屏幕样式按钮-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+					<a class="navbar-brand" href="#">
+						<span class="glyphicon glyphicon-picture"></span> TitleTitleTitle
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div id="navbar-example">
+						<ul class="nav navbar-nav text-center users-nav-title" role="tablist">
+							<li>
+								<a href="#titleone">TITLE ONE</a>
+							</li>
+							<li>
+								<a href="#titletwo">TITLE TWO</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">text3</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">text4</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="nav navbar-nav navbar-right text-center">
+						<li>
+							<p class="navbar-text"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> : 000-0000-0000</p>
+							<p class="navbar-text"><span class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span> : xxx@xx.xx</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="alert alert-info fade in" role="alert" style="position: relative;top: 50px;">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<span>欢迎进入</span>
+		</div>
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-top: 50px;">
+			<!-- Indicators -->
+
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<!--<img src="" alt="..." height="400" width="1200">-->
+					<div style="height: 550px;width: 1200px;background-color: skyblue;margin: 0 auto;">
+					</div>
+					<div class="carousel-caption" style="font-size: 28px;">
+						banner1
+					</div>
+				</div>
+				<div class="item">
+					<div style="height: 550px;width: 1200px;background-color: skyblue;margin: 0 auto;">
+					</div>
+					<div class="carousel-caption" style="font-size: 28px;">
+						banner2
+					</div>
+				</div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<div class="aos-init" aos="fade-up" style="width: 100%;height: 70px;background-color: #8f8f8f;margin-top: 20px;display: flex;justify-content: center;align-items: center;">
+			<h3 style="color: #eee;">text</h3>
+		</div>
+		<div class="container">
+			<div class="row jumbotron" style="margin-top: 50px;">
+				<div class="col-xs-12 col-md-4 aos-init" aos="fade-up">
+					<div class="test1" style="width: 100%;position: relative;">
+						<div class="swiper-container" style="height: 200px;">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background: url(img/1.jpg) center center;color: #eee;">
+									<div style="position: absolute;bottom: 0;padding-left:10px;width: 100%;text-align: left;text-shadow: 0px 0px 10px #333;background-color: #333;">title1</div>
+								</div>
+								<div class="swiper-slide" style="background: url(img/2.jpg) center center;color: #eee;">
+									<div style="position: absolute;bottom: 0;padding-left:10px;width: 100%;text-align: left;text-shadow: 0px 0px 10px #333;background-color: #333;">title2</div>
+								</div>
+								<div class="swiper-slide" style="background: url(img/3.jpg) center center;color: #eee;">
+									<div style="position: absolute;bottom: 0;padding-left:10px;width: 100%;text-align: left;text-shadow: 0px 0px 10px #333;background-color: #333;">title3</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 aos-init" aos="fade-up" aos-delay="100">
+					<h3 style="font-weight: 600;color: deepskyblue;">News</h3>
+					<ul id="news">
+						<li>
+							<a href="javascript:void(0);" data-toggle="modal" data-target="#myModal"><span>news01</span><span class="label-right">2018-04</span></a>
+						</li>
+						<li>
+							<a href="javascript:void(0);"><span>news02</span><span class="label-right">2018-02</span></a>
+						</li>
+						<li>
+							<a href="javascript:void(0);"><span>news03</span><span class="label-right">2017-12</span></a>
+						</li>
+						<li>
+							<a href="javascript:void(0);"><span>news04</span><span class="label-right">2017-10</span></a>
+						</li>
+					</ul>
+					<a href="#" style="float: right;">>更多</a>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								content
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 aos-init" aos="fade-up" aos-delay="200">
+					<h3>title</h3>
+					<p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni vel eum veniam nostrum vero ullam qui laudantium cupiditate culpa commodi. Quis!
+					</p>
+				</div>
+			</div>
+			<div id="titleone" class="jumbotron">
+				<h2 class="text-center aos-init" aos="fade-down">TITLE ONE</h2>
+			</div>
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-xs-12 col-md-8" aos="flip-right" style="padding-top: 0px;">
+						<h4>title</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt facere doloribus quasi aliquam delectus beatae vitae quam omnis maiores officiis quia recusandae quibusdam in quaerat id explicabo cupiditate laudantium nisi odio architecto inventore enim culpa repellat dignissimos adipisci. Commodi a accusamus optio unde ut eaque ipsa voluptatum obcaecati ea voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt facere doloribus quasi aliquam delectus beatae vitae quam omnis maiores officiis quia recusandae quibusdam in quaerat id explicabo cupiditate laudantium nisi odio architecto inventore enim culpa repellat dignissimos adipisci. Commodi a accusamus optio unde ut eaque ipsa voluptatum obcaecati ea voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt facere doloribus quasi aliquam delectus beatae vitae quam omnis maiores officiis quia recusandae quibusdam in quaerat id explicabo cupiditate laudantium nisi odio architecto inventore enim culpa repellat dignissimos adipisci. Commodi a accusamus optio unde ut eaque ipsa voluptatum obcaecati ea voluptate.
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="test1 aos-init" aos="fade-right" style="width: 100%;margin-top: 40px;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="test1 aos-init" aos="fade-left" style="width: 100%;margin-top: 40px;">
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-8 aos-init" aos="flip-left" style="">
+						<h4>title</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt facere doloribus quasi aliquam delectus beatae vitae quam omnis maiores officiis quia recusandae quibusdam in quaerat id explicabo cupiditate laudantium nisi odio architecto inventore enim culpa repellat dignissimos adipisci. Commodi a accusamus optio unde ut eaque ipsa voluptatum obcaecati ea voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt facere doloribus quasi aliquam delectus beatae vitae quam omnis maiores officiis quia recusandae quibusdam in quaerat id explicabo cupiditate laudantium nisi odio architecto inventore enim culpa repellat dignissimos adipisci. Commodi a accusamus optio unde ut eaque ipsa voluptatum obcaecati ea voluptate.
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-xs-12 col-md-8 aos-init" aos="flip-right" style="">
+						<h4>title</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt facere doloribus quasi aliquam delectus beatae vitae quam omnis maiores officiis quia recusandae quibusdam in quaerat id explicabo cupiditate laudantium nisi odio architecto inventore enim culpa repellat dignissimos adipisci. Commodi a accusamus optio unde ut eaque ipsa voluptatum obcaecati ea voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt facere doloribus quasi aliquam delectus beatae vitae quam omnis maiores officiis quia recusandae quibusdam in quaerat id explicabo cupiditate laudantium nisi odio architecto inventore enim culpa repellat dignissimos adipisci. Commodi a accusamus optio unde ut eaque ipsa voluptatum obcaecati ea voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt facere doloribus quasi aliquam delectus beatae vitae quam omnis maiores officiis quia recusandae quibusdam in quaerat id explicabo cupiditate laudantium nisi odio architecto inventore enim culpa repellat dignissimos adipisci. Commodi a accusamus optio unde ut eaque ipsa voluptatum obcaecati ea voluptate.
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="test1 aos-init" aos="fade-right" style="width: 100%;margin-top: 40px;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center aos-init">
+				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
+					<div class="box" aos="fade-up" aos-delay="300">
+						<img src="img/1.jpg" height="260">
+						<div class="box-content">
+							<h3 class="title">Title</h3>
+							<span class="post"></span>
+							<p class="social">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis neque culpa sunt rerum beatae dolor non in veniam temporibus nostrum sit necessitatibus. Nostrum tempore porro hic iure repudiandae ea maxime.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
+					<div class="test2" aos="fade-up" aos-delay="200">
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
+					<div class="test2" aos="fade-up" aos-delay="100">
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
+					<div class="test2" aos="fade-up" aos-delay="0">
+					</div>
+				</div>
+			</div>
+			<div class="row text-center aos-init">
+				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
+					<div class="test2" aos="fade-up" aos-delay="0">
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
+					<div class="test2" aos="fade-up" aos-delay="100">
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
+					<div class="test2" aos="fade-up" aos-delay="200">
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
+					<div class="test2" aos="fade-up" aos-delay="300">
+					</div>
+				</div>
+			</div>
+			<div id="titletwo" class="jumbotron">
+				<h2 class="text-center aos-init" aos="fade-down">TITLE TWO</h2>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-6 col-md-3">
+							<div class="thumbnail" aos="zoom-out" aos-delay="100" style="text-align: center;">
+								<div class="test3" style="">
+								</div>
+								<div class="caption">
+									<h3>Thumbnail label</h3>
+									<p>简介</p>
+									<p>
+										<a href="#" class="btn btn-primary" role="button">了解详情</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="thumbnail" aos="zoom-out" aos-delay="200" style="text-align: center;">
+								<div class="test3" style="">
+								</div>
+								<div class="caption">
+									<h3>Thumbnail label</h3>
+									<p>简介</p>
+									<p>
+										<a href="#" class="btn btn-primary" role="button">了解详情</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-3">
+							<div class="thumbnail" aos="zoom-out" aos-delay="300" style="text-align: center;">
+								<div class="test3" style="">
+								</div>
+								<div class="caption">
+									<h3>Thumbnail label</h3>
+									<p>简介</p>
+									<p>
+										<a href="#" class="btn btn-primary" role="button">了解详情</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-3">
+							<div class="thumbnail" aos="zoom-out" aos-delay="400" style="text-align: center;">
+								<div class="test3" style="">
+								</div>
+								<div class="caption">
+									<h3>Thumbnail label</h3>
+									<p>简介</p>
+									<p>
+										<a href="#" class="btn btn-primary" role="button">了解详情</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active">
+					<a href="#home" aria-controls="home" role="tab" data-toggle="tab">one</a>
+				</li>
+				<li role="presentation">
+					<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">two</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane fade in active well" id="home">
+					<div class="page-header">
+						<h1>Example page header 1<small>Subtext for header</small></h1>
+						<div class="media">
+							<div class="media-left">
+								<a href="#">
+									<div class="test1"></div>
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane fade in well" id="profile">
+					<div class="page-header">
+						<h1>Example page header 2<small>Subtext for header</small></h1>
+						<div class="media">
+							<div class="media-left">
+								<a href="#">
+									<div class="test1"></div>
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="aos-init" aos="fade-up" aos-once="true">
+			<div class="footer">
+				<div class="footer-wrap auto">
+					<div class="foot-nav">
+						<dl>
+							<dt><a href="#">医院概况</a></dt>
+							<!--<dd>
+								<a href="about.aspx?type=3">医院介绍</a>
+								<a href="about.aspx?type=3">关于布莱根健康</a>
+								<a href="about.aspx?type=5">环境设施</a>
+								<a href="about.aspx?type=6">专家顾问</a>
+							</dd>-->
+						</dl>
+						<dl>
+							<dt><a href="#">医院概况</a></dt>
+						</dl>
+						<dl>
+							<dt><a href="#">医院概况</a></dt>
+						</dl>
+					</div>
+					<div class="coopyright">
+						<div class="bq">
+							<span>XX医院版权所有</span>
+							<a href="http://www.miitbeian.gov.cn" target="_blank">琼ICP备18000762号-1</a>
+						</div>
+						<div class="share" style="">
+							<span>关注我们</span>
+							<a href="javascript:;" class="wechat">
+								<div>
+									微信
+								</div>
+								<div class="qr">
+									123
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script>
+		AOS.init({
+			easing: 'ease-out-back',
+			duration: 1000
+		});
+		$(function() {
+			$('.item').perfectScrollbar();
+			var swiper = new Swiper('.swiper-container', {
+				autoplay: true,
+				delay: 500,
+				loop: true
+			});
+		})
+		$.get("text.json", function(result) {
+				$.each(result.newsTitle, function(i) {
+					$("#news>li:eq("+ i +")>a>span:first").html(result.newsTitle[i]);
+					console.log(result.newsTitle[i])
+				});
+		})
+	</script>
+	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
