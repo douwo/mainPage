@@ -10,6 +10,9 @@ li {
 	list-style: none;
 }
 
+.cursor-pointer{
+	cursor: pointer;
+}
 /*修改bootstrap默认样式*/
 
 .carousel-control.left {
@@ -19,6 +22,14 @@ li {
 .carousel-control.right {
 	background-image: none;
 }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover
+{
+	background-color: transparent
+}
+
+
+/*test1,test2,test3 占位图*/
 
 .test1 {
 	display: inline-block;
@@ -49,24 +60,26 @@ li {
 	-webkit-box-shadow: 0 0 25px -5px #000;
 }
 
-/*占位图*/
-
 #goTop {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: fixed;
-	bottom: 20vh;
+	bottom: 23vh;
 	right: 4vw;
 	height: 40px;
 	width: 40px;
-	background-color: rgba(125, 190, 210, 0.5);
 	opacity: 0.8;
 	text-align: center;
 	cursor: pointer;
 	z-index: 10;
-	border: 1px solid cornflowerblue;
+	border: 1px dashed cornflowerblue;
 	box-sizing: border-box;
+	border-radius: 50%;
+	transition: all .5s;
+}
+#goTop:hover{
+	transform: scale(1.2);
 }
 
 .label-right {
@@ -143,6 +156,7 @@ li {
 	border-left: 2px solid cadetblue;
 	border-right: 2px solid cadetblue;
 }
+
 .news-banner-title {
 	position: absolute;
 	bottom: 0;
@@ -248,6 +262,7 @@ ul.box-shadow {
 		margin: 40px auto;
 	}
 }
+
 @media only screen and (min-width: 100px) and (max-width: 480px) {
 	ul.box-shadow {
 		width: 100%;
