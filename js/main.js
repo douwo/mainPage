@@ -2,6 +2,7 @@ $(function(){
 	titleZeroText_P = $("#titlezero").offset().top;
 	titleOneText_P = $("#titleone").offset().top;
 	titleTwoText_P = $("#titletwo").offset().top;
+	$("#goTop").hide();
 })
 
 $(".users-nav-title>li>a").on("click", function() {
@@ -28,6 +29,13 @@ $(document).scroll(function() {
 	} else {
 		$('#goTop').show(300);
 	}
+//	if(top<titleOneText_P){
+//		$("body").css("background-color","lightblue");
+//	}else if(top<titleTwoText_P){
+//		$("body").css("background-color","#5FBDCE");
+//	}else{
+//		$("body").css("background-color","#5f9ece");
+//	}
 })
 $("#zero").click(function(){
 	$('body,html').animate({

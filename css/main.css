@@ -1,7 +1,9 @@
 * {
 	font-family: "微软雅黑", "黑体";
 }
-
+body{
+	transition: all .5s;
+}
 ul {
 	padding-left: 0;
 }
