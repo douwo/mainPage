@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>重庆海吉亚肿瘤医院</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="Keywords" content="重庆,重庆医院,肿瘤医院,重庆肿瘤医院,海吉亚,思贤路,三甲医院" />
 		<link rel="icon" type="image/x-icon" href="img/hjy.png" />
 		<link rel="stylesheet" type="text/css" href="css/Normalize.css" />
@@ -20,6 +20,7 @@
 		<script src="js/aos.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/divscroll.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=您申请的key值"></script>
 		<style type="text/css">
 			body {
 				position: relative;
@@ -49,13 +50,13 @@
 					<div id="navbar-example">
 						<ul class="nav navbar-nav text-center users-nav-title" role="tablist">
 							<li>
-								<a href="#titlezero" class="cursor-pointer" id="zero">TITLE ZERO</a>
+								<a href="#titlezero" class="cursor-pointer" id="zero">医院简介</a>
 							</li>
 							<li>
 								<a href="#titleone" class="cursor-pointer" id="one">TITLE ONE</a>
 							</li>
 							<li>
-								<a href="#titletwo" class="cursor-pointer" id="two">TITLE TWO</a>
+								<a href="#titletwo" class="cursor-pointer" id="two">专家团队</a>
 							</li>
 						</ul>
 					</div>
@@ -83,16 +84,15 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<!--<img src="" alt="..." height="400" width="1200">-->
-					<div style="height:550px;width: 100%;background-color: skyblue;margin: 0 auto;">
+					<div class="banner-content banner-content-img01">
 					</div>
 					<div class="carousel-caption" style="font-size: 28px;height: 350px;">
-						<h3 style="background-color: #1E90FF;opacity: 0.7">Viral Treatments</h3>
-						<p style="background-color: #204D74;opacity: 0.7;">Lorem Ipsum is simply dummy text of the typesetting industry</p>
+						<h3>Viral Treatments</h3>
+						<p>Lorem Ipsum is simply dummy text of the typesetting industry</p>
 					</div>
 				</div>
 				<div class="item">
-					<div style="height:550px;width: 100%;background-color: skyblue;margin: 0 auto;">
+					<div class="banner-content banner-content-img02">
 					</div>
 					<div class="carousel-caption" style="font-size: 28px;height: 350px;">
 						<h3>Viral Treatments</h3>
@@ -110,23 +110,27 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-		<div id="titlezero" class="aos-init sort-image01" aos="fade-up">
-			<h3 style="color: #eee;">text</h3>
-		</div>
-		<div class="container">
+		<div class="container" id="titlezero">
+			<div class="aos-init sort-image01" aos="fade-up">
+				<h2 style="color: #eee;padding: 40px 0 15px 0;font-weight: 800;letter-spacing:5px;text-align: center;">医院简介</h2>
+				<div class="users-line"></div>
+				<div class="jianjie-bg">
+					<p id="jianjie"></p>
+				</div>
+			</div>
 			<div class="row jumbotron" style="margin-top: 50px;">
 				<div class="col-xs-12 col-md-4 aos-init" aos="fade-up">
 					<div class="test1" style="width: 100%;position: relative;">
 						<div class="swiper-container" style="height: 200px;">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide" style="background: url(img/1.jpg) center center;color: #eee;">
-									<div class="news-banner-title" style="">title1</div>
+							<div class="swiper-wrapper text-color-white">
+								<div class="swiper-slide swiper1-content1">
+									<div class="news-banner-title">title1</div>
 								</div>
-								<div class="swiper-slide" style="background: url(img/2.jpg) center center;color: #eee;">
-									<div class="news-banner-title" style="">title2</div>
+								<div class="swiper-slide swiper1-content1">
+									<div class="news-banner-title">title2</div>
 								</div>
-								<div class="swiper-slide" style="background: url(img/3.jpg) center center;color: #eee;">
-									<div class="news-banner-title" style="">title3</div>
+								<div class="swiper-slide swiper1-content1">
+									<div class="news-banner-title">title3</div>
 								</div>
 							</div>
 							<div class="swiper-pagination" style="position: relative;bottom: 40px"></div>
@@ -134,10 +138,10 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-4 aos-init" aos="fade-up" aos-delay="100">
-					<h3 class="news-list-title">News</h3>
+					<h3 class="news">News</h3>
 					<ul id="news">
 						<li>
-							<a href="javascript:void(0);" data-toggle="modal" data-target="#newsContent1"><span>news01</span><span class="label-right">2018-04</span></a>
+							<a href="javascript:void(0);" data-toggle="modal" data-target="#newsContent1"><span class="news-title" title="">news01</span><span class="label-right">2018-04</span></a>
 						</li>
 						<li>
 							<a href="javascript:void(0);" data-toggle="modal" data-target="#newsContent2"><span>news02</span><span class="label-right">2018-02</span></a>
@@ -297,44 +301,45 @@
 				</div>
 			</div>
 			<div class="row text-center aos-init">
-				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
+				<div class="col-xs-6 col-md-3" style="margin: 20px 0;">
 					<div class="box" aos="fade-up" aos-delay="300">
 						<img src="img/1.jpg" height="260">
 						<div class="box-content">
-							<h3 class="title">Title</h3>
+							<h3 class="title">title</h3>
 							<span class="post"></span>
 							<p class="social">
-								Officiis neque culpa sunt rerum beatae dolor non in veniam temporibus nostrum sit necessitatibus. Nostrum tempore porro hic iure repudiandae ea maxime.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga illum dolore nostrum nulla aperiam. Doloremque in impedit ipsum excepturi accusantium ut dolores eligendi id eum tenetur tempore iure et doloribus.
 							</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
-					<div class="test2" aos="fade-up" aos-delay="200">
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
+				<div class="col-xs-6 col-md-3" style="margin: 20px 0;">
 					<div class="test2" aos="fade-up" aos-delay="100">
 					</div>
 				</div>
-				<div class="col-xs-12 col-md-3" style="margin: 20px 0;">
+				<div class="col-xs-6 col-md-3" style="margin: 20px 0;">
+					<div class="test2" aos="fade-up" aos-delay="100">
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3" style="margin: 20px 0;">
 					<div class="test2" aos="fade-up" aos-delay="0">
 					</div>
 				</div>
 			</div>
 			<div id="titletwo" class="jumbotron">
-				<h2 class="text-center aos-init" aos="fade-down">TITLE TWO</h2>
+				<h2 class="text-center aos-init" aos="fade-down">专家团队</h2>
 			</div>
 			<div class="row">
 				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail" aos="zoom-out" aos-delay="100" style="text-align: center;">
-						<div class="test3" style="">
+					<div class="thumbnail" titletwo aos="zoom-out" aos-delay="100" style="text-align: center;padding: 0;">
+						<div class="doctor-photo">
+							<img style="width: 100%;" src="img/doctor/wenjianhu.jpg" />
 						</div>
 						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>简介</p>
-							<p>
-								<a href="javascript:void(0)" class="btn btn-primary" data-toggle="modal" data-target="#xiangqing01">了解详情</a>
+							<h3>温剑虎</h3>
+							<p>党支部书记</p>
+							<p style="text-align: left;padding: 0 10px;text-indent: 28px;">
+								胸外科主任、医务科科长 主任医师、教授、硕士生导师 原重庆医科大学附属第一医院胸心外科专家 新几内亚太平洋国际医院胸心外科主任
 							</p>
 						</div>
 					</div>
@@ -347,7 +352,6 @@
 							<h3>Thumbnail label</h3>
 							<p>简介</p>
 							<p>
-								<a href="#" class="btn btn-primary" role="button">了解详情</a>
 							</p>
 						</div>
 					</div>
@@ -361,7 +365,6 @@
 							<h3>Thumbnail label</h3>
 							<p>简介</p>
 							<p>
-								<a href="#" class="btn btn-primary" role="button">了解详情</a>
 							</p>
 						</div>
 					</div>
@@ -375,30 +378,66 @@
 							<h3>Thumbnail label</h3>
 							<p>简介</p>
 							<p>
-								<a href="#" class="btn btn-primary" role="button">了解详情</a>
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- Modal -->
-			<div class="modal fade" id="xiangqing01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail" titletwo aos="zoom-out" aos-delay="100" style="text-align: center;padding: 0;">
+						<div class="doctor-photo">
+							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
 						</div>
-						<div class="modal-body">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptatibus velit illum alias sunt incidunt ab eveniet blanditiis laborum sit quisquam quaerat illo saepe recusandae ipsum aspernatur maiores rerum magnam!
+						<div class="caption">
+							<h3>徐晓薇</h3>
+							<p>放疗科主任医师</p>
+							<p style="text-align: left;padding: 0 10px;text-indent: 28px;">
+								重庆市沙坪坝区政协第九、十、十一届政协委员 重庆市放射肿瘤学学会委员 重庆市癌症康复与姑息治疗专委会委员 重庆市高级心理咨询师
+							</p>
 						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail" aos="zoom-out" aos-delay="200" style="text-align: center;">
+						<div class="test3" style="">
+						</div>
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>简介</p>
+							<p>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail" aos="zoom-out" aos-delay="300" style="text-align: center;">
+						<div class="test3" style="">
+						</div>
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>简介</p>
+							<p>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail" aos="zoom-out" aos-delay="400" style="text-align: center;">
+						<div class="test3" style="">
+						</div>
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>简介</p>
+							<p>
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-
+			<hr />
 			<div class="row">
 				<div class="col-md-4 col-xs-12">
 					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -490,8 +529,18 @@
 				</div>
 			</div>
 		</div>
+		<style type="text/css">
+			#map {
+				float: right;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+		<div style="height: 300px;">
+			<div id="map"></div>
+		</div>
 
-		<footer class="aos-init" aos="fade-up" aos-once="true">
+		<footer>
 			<div class="footer">
 				<div class="footer-wrap auto">
 					<div class="foot-nav">
@@ -546,13 +595,13 @@
 			var swiper = new Swiper('.swiper-container', {
 				autoplay: true,
 				autoplay: {
-					delay: 1500,
+					delay: 3000,
 					stopOnLastSlide: false,
 					disableOnInteraction: false,
 				},
 				pagination: {
 					el: '.swiper-pagination',
-					clickable:true
+					clickable: true
 				},
 				delay: 10,
 				loop: true,
@@ -560,6 +609,25 @@
 			});
 			$("[data-toggle='tooltip']").tooltip();
 		})
+	</script>
+	<script type="text/javascript">
+		var map = new AMap.Map('map', {
+			zoom: 15,
+			center: [106.301112, 29.585909]
+		});
+		AMap.plugin(['AMap.ToolBar', 'AMap.Scale'], function() {
+			//创建并添加工具条控件
+			var toolBar = new AMap.ToolBar();
+			var scale = new AMap.Scale();
+			map.addControl(toolBar);
+			map.addControl(scale);
+		})
+		var marker = new AMap.Marker({
+			position: [106.301112, 29.585909], //marker所在的位置
+			map: map //创建时直接赋予map属性
+		});
+		//也可以在创建完成后通过setMap方法执行地图对象
+		marker.setMap(map);
 	</script>
 	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 

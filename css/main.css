@@ -1,9 +1,11 @@
 * {
 	font-family: "微软雅黑", "黑体";
 }
-body{
+
+body {
 	transition: all .5s;
 }
+
 ul {
 	padding-left: 0;
 }
@@ -12,9 +14,11 @@ li {
 	list-style: none;
 }
 
-.cursor-pointer{
+.cursor-pointer {
 	cursor: pointer;
 }
+
+
 /*修改bootstrap默认样式*/
 
 .carousel-control.left {
@@ -24,9 +28,9 @@ li {
 .carousel-control.right {
 	background-image: none;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover
-{
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover {
 	background-color: transparent
 }
 
@@ -80,7 +84,8 @@ li {
 	border-radius: 50%;
 	transition: all .5s;
 }
-#goTop:hover{
+
+#goTop:hover {
 	transform: scale(1.2);
 }
 
@@ -146,17 +151,74 @@ li {
 	width: 100% !important;
 }
 
-.sort-image01 {
+.banner-content {
+	height: 550px;
+	width: 100%;
+	background-color: skyblue;
 	margin: 0 auto;
-	width: 85%;
-	height: 70px;
+}
+
+.banner-content-img01 {
+	background: url(../img/banner1.jpg) center 40%;
+	background-size: 100%;
+}
+
+.banner-content-img02 {
+	background: url(../img/banner2.jpg) 20% center;
+	background-size: 120%;
+}
+
+.sort-image01 {
+	color: #eee;
+	font-size: 1.5rem;
+	text-align: center;
+	height: auto;
 	background-color: #79CFD1;
 	margin-top: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	border-left: 2px solid cadetblue;
 	border-right: 2px solid cadetblue;
+}
+
+.users-line {
+	margin: 0 auto;
+	height: 3px;
+	width: 15rem;
+	background: #eee;
+	position: relative;
+	top: 1px;
+}
+
+.jianjie-bg {
+	background-image: linear-gradient(to left, #204D74, #1B6D85);
+}
+
+#jianjie {
+	text-align: left;
+	padding: 6vh 5vw;
+	line-height: 24px;
+	text-indent: 30px;
+	text-shadow: 0 0 1px #666;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.text-color-white {
+	color: white;
+}
+
+.swiper1-content1 {
+	background: url(../img/swiper1-1.jpg) center center;
+	background-size: 100%;
+}
+
+.swiper1-content2 {
+	background: url(../img/swiper1-1.jpg) center center;
+	background-size: 100%;
+}
+
+.swiper1-content3 {
+	background: url(../img/swiper1-1.jpg) center center;
+	background-size: 100%;
 }
 
 .news-banner-title {
@@ -170,14 +232,14 @@ li {
 	opacity: 0.7;
 }
 
-.news-list-title {
+.news {
 	position: relative;
 	font-weight: 600;
 	color: dodgerblue;
 	text-shadow: 0 0 1px #333;
 }
 
-.news-list-title:after {
+.news:after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -185,6 +247,14 @@ li {
 	height: 2px;
 	width: 3rem;
 	background-color: #309BBE;
+}
+
+.news-title {
+	width: 75%;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 #titleone {
